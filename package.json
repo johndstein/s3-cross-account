@@ -1,0 +1,23 @@
+{
+  "name": "throttler2",
+  "//1": "Don't bother setting version here.",
+  "//2": "We don't publish to NPM or anything.",
+  "//3": "Version is set by git tags in TeamCity build.",
+  "//4": "See teamcity.sh",
+  "version": "0.0.0",
+  "description": "Send each customer's raw events from DynamoDB to Parsing Service with throttling",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha test",
+    "lint": "node_modules/.bin/eslint index.js lib/*.js"
+  },
+  "author": "John Stein",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.575.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-chai-friendly": "^0.5.0",
+    "mocha": "^6.2.2"
+  }
+}
