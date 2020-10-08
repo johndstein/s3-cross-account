@@ -44,3 +44,10 @@ export AWS_PROFILE=aprofile && misc/publish.sh -a $account_a -o $account_b
 export AWS_PROFILE=bprofile && misc/publish.sh -a $account_b -o $account_a
 ```
 
+## IAM Revoke Sessions
+
+When testing IAM role changes you need to revoke older sessions or your changes
+won't take effect.
+
+After revoking older sessions you will need to make some change to your lambda
+code and save the change so that you will get a new session.
