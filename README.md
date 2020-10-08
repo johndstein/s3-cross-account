@@ -18,7 +18,7 @@ Create an IAM role in both accounts named `s3-cross-account`. Use the policy in
 `misc/policy.json`. Replace `OTHER_ACCOUNT_NUMBER` with the AWS account number
 of the other account.
 
-Edit the policy's trust relationship. Use `misc/trust.json`. Replace
+Edit the role's trust relationship. Use `misc/trust.json`. Replace
 `OTHER_ACCOUNT_NUMBER` with the AWS account number of the other account.
 
 ## S3 Bucket
